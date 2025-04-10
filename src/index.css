@@ -3,8 +3,8 @@
 .diskete{
   width: 500px;
   height: 500px;
-  background-color: #333232;
-  border-radius: 5px;
+  background: linear-gradient(45deg, #393838 98%, transparent 2%);
+  border-radius: 10px;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -31,10 +31,11 @@
 .gap{
   width: 290px;
   height: 150px;
-  background-color: #303030;
+  background: linear-gradient(360deg, #303030, #393838);
   border-style: solid;
-  border-color: #232222;
+  border-color: rgb(0, 0, 0, 0.20);
   border-width: 2px;
+  border-top: 0;
   border-bottom-left-radius: 7px;
   border-bottom-right-radius: 7px;
   margin-right: 60px;
@@ -44,12 +45,15 @@
 .metal{
   width: 220px;
   height: 150px;
-  background-color: #c2c4c6;
+  background: linear-gradient(360deg, #c2c4c6 50%, #f3f0f0);
   border-bottom-left-radius: 7px;
   border-bottom-right-radius: 7px;
+  border-color: transparent;
   display: flex;
   flex-direction: row-reverse;
   align-items: end;
+  transform: translate(1px ,0px);
+  
 }
 
 .hole{
@@ -60,6 +64,7 @@
   position: relative;
   left: -40px;
   top: -20px;
+  box-shadow: 0 0 1px;
 }
 
 
@@ -75,24 +80,29 @@
 
 .label{
   width: 350px;
-  height: 300px;
-  border-style: solid;
-  border-color: #232222;
-  border-width: 8px;
-  border-top-right-radius: 8px;
-  border-top-left-radius: 8px;
+  border: 7px solid #232222;
+  
+  border-radius: 7px 7px 0px 0px;
   border-bottom: transparent;
-  background-color: #ffffff;
+  background: linear-gradient(300deg, #c6c4c4, #ffffff) ;
+  display: block;
+  justify-content: center;
+  align-content: end;
+
+}
+
+.label p{
   display: flex;
   justify-content: center;
-  align-items: end;
+  color:#b2adad
 }
 
 .label-top{
-  width: 500px;
+  width: 100%;
   height: 50px;
-  background-color: #1f6dda;
- 
+  background: radial-gradient(circle,#0a82be, #025882);
+  border-top-right-radius: 7px;
+  border-top-left-radius: 7px;
 }
 
 .rightpad-container{
